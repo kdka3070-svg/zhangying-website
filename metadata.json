@@ -1,0 +1,6 @@
+{
+  "name": "张莹的个人网站",
+  "description": "具有手绘贴纸插画风格的张莹个人网站，涵盖首页、关于我、我的文章与我的作品等四大核心板块。",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

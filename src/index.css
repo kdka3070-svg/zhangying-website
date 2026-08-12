@@ -1,0 +1,125 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Noto Sans SC', system-ui, -apple-system, sans-serif;
+    background-color: #FAF8F2;
+    color: #2D3436;
+    background-image: radial-gradient(#E2E0D8 1.5px, transparent 1.5px);
+    background-size: 24px 24px;
+    overflow-x: hidden;
+  }
+}
+
+/* Custom border width utilities */
+.border-3 {
+  border-width: 3px;
+}
+.border-2\.5 {
+  border-width: 2.5px;
+}
+.border-1\.5 {
+  border-width: 1.5px;
+}
+
+/* Custom fonts */
+.font-doodle {
+  font-family: 'Fredoka', 'Noto Sans SC', system-ui, sans-serif;
+}
+
+.font-heading {
+  font-family: 'Noto Sans SC', 'Fredoka', system-ui, sans-serif;
+}
+
+/* Custom Sticker Shadow Effects */
+.shadow-sticker {
+  box-shadow: 4px 4px 0px #2D3436;
+}
+
+.shadow-sticker-lg {
+  box-shadow: 6px 6px 0px #2D3436;
+}
+
+.shadow-sticker-sm {
+  box-shadow: 2.5px 2.5px 0px #2D3436;
+}
+
+.shadow-sticker-violet {
+  box-shadow: 4px 4px 0px #6C5CE7;
+}
+
+.shadow-sticker-coral {
+  box-shadow: 4px 4px 0px #FF7675;
+}
+
+.shadow-sticker-mint {
+  box-shadow: 4px 4px 0px #00B894;
+}
+
+/* Highlighter stroke animation / background */
+.highlight-yellow {
+  background: linear-gradient(100deg, rgba(253, 203, 110, 0.7) 0%, rgba(255, 234, 167, 0.9) 100%);
+  border-radius: 4px;
+  padding: 0 4px;
+}
+
+.highlight-pink {
+  background: linear-gradient(100deg, rgba(255, 118, 117, 0.4) 0%, rgba(255, 118, 117, 0.6) 100%);
+  border-radius: 4px;
+  padding: 0 4px;
+}
+
+.highlight-mint {
+  background: linear-gradient(100deg, rgba(0, 184, 148, 0.3) 0%, rgba(85, 239, 196, 0.6) 100%);
+  border-radius: 4px;
+  padding: 0 4px;
+}
+
+.highlight-purple {
+  background: linear-gradient(100deg, rgba(162, 155, 254, 0.4) 0%, rgba(108, 92, 231, 0.3) 100%);
+  border-radius: 4px;
+  padding: 0 4px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Scrollbars */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #F1EFE7;
+  border-left: 2px solid #2D3436;
+}
+::-webkit-scrollbar-thumb {
+  background: #6C5CE7;
+  border: 2px solid #2D3436;
+  border-radius: 6px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #FF7675;
+}
+
